@@ -1,0 +1,13 @@
+EXPORTS
+emxInitArray_real_T
+emxCreate_real_T
+emxCreateWrapper_real_T
+emxCreateND_real_T
+emxCreateWrapperND_real_T
+emxDestroyArray_real_T
+echo_scr
+emxEnsureCapacity
+emxFree_real_T
+emxInit_real_T
+echo_scr_initialize
+echo_scr_terminate

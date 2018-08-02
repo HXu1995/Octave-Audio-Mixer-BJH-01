@@ -1,0 +1,14 @@
+EXPORTS
+emxInitArray_real_T
+emxCreate_real_T
+emxCreateWrapper_real_T
+emxCreateND_real_T
+emxCreateWrapperND_real_T
+emxDestroyArray_real_T
+trem_scr
+emxEnsureCapacity
+emxFree_real_T
+emxInit_real_T
+emxInit_real_T1
+trem_scr_initialize
+trem_scr_terminate

@@ -1,0 +1,22 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<body>
+<script src="resources/eml_report_loadable_data.js"></script>
+<pre class="code">
+<span class="srcline"><span class="lineno"><a href="1,1" id="srcline1"> 1</a></span><span class="line"><span class="keyword">function</span> <span class="var type1" id="S2T1U3">y</span> = echo_scr(<span class="var type1" id="S3T1U6">sample</span>,<span class="var type1" id="S4T2U7">delay</span>,<span class="var type1" id="S5T2U8">gain</span>,<span class="var type1" id="S6T2U9">echo_num</span>,<span class="var type1" id="S7T2U10">fs</span>)</span></span>
+<span class="srcline"><span class="lineno"><a href="1,2" id="srcline2"> 2</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="1,3" id="srcline3"> 3</a></span><span class="line"><span class="mxinfo " id="T2:U7"><span class="var type1" id="S8T2U13">delay0</span> = <span class="mxinfo " id="T2:U9"><span class="var type1" id="S4T2U15">delay</span> * <span class="var type1" id="S7T2U16">fs</span></span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="1,4" id="srcline4"> 4</a></span><span class="line"><span class="comment">% prompt2 = 'Enter the gain (&gt;1 for gradually increase in volume, &lt;1 for decreasing volume)\n';</span></span></span>
+<span class="srcline"><span class="lineno"><a href="1,5" id="srcline5"> 5</a></span><span class="line"><span class="mxinfo " id="T2:U12"><span class="var type1" id="S9T2U19">gain0</span> = <span class="var type1" id="S5T2U20">gain</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="1,6" id="srcline6"> 6</a></span><span class="line"><span class="mxinfo " id="T2:U15"><span class="var type1" id="S10T2U23">echo_num0</span> = <span class="var type1" id="S6T2U24">echo_num</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="1,7" id="srcline7"> 7</a></span><span class="line"><span class="mxinfo " id="T1:U18"><span class="var type1" id="S11T1U27">echosample</span> = <span class="var type1" id="S3T1U28">sample</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="1,8" id="srcline8"> 8</a></span><span class="line"><span class="keyword">for</span> <span class="var type1" id="S12T2U31">x</span> = <span class="mxinfo " id="T2:U22">1</span>:<span class="var type1" id="S6T2U34">echo_num</span></span></span>
+<span class="srcline"><span class="lineno"><a href="1,9" id="srcline9"> 9</a></span><span class="line">    <span class="mxinfo " id="T1:U24"><span class="var type1" id="S13T1U37">echosample1</span> = <span class="mxinfo " id="T1:U26">cat(1, <span class="var type1" id="S11T1U41">echosample</span>, <span class="mxinfo " id="T1:U28"><span class="mxinfo " id="T3:U29">zeros(<span class="mxinfo " id="T2:U30">1</span>,<span class="var type1" id="S8T2U46">delay0</span>)</span>.'</span>)</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="1,10" id="srcline10">10</a></span><span class="line">    <span class="mxinfo " id="T1:U32"><span class="var type1" id="S11T1U49">echosample</span> = (<span class="mxinfo " id="T1:U34"><span class="var type1" id="S13T1U52">echosample1</span> + <span class="mxinfo " id="T1:U36"><span class="mxinfo " id="T1:U37"><span class="var type1" id="S5T2U55">gain</span>*<span class="mxinfo " id="T1:U39">cat(1,<span class="mxinfo " id="T1:U40"><span class="mxinfo " id="T3:U41">zeros(<span class="mxinfo " id="T2:U42">1</span>,<span class="var type1" id="S8T2U63">delay0</span>)</span>.'</span>,<span class="var type1" id="S11T1U64">echosample</span>)</span></span>/<span class="var type1" id="S6T2U65">echo_num</span></span></span>)</span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="1,11" id="srcline11">11</a></span><span class="line"><span class="keyword">end</span></span></span>
+<span class="srcline"><span class="lineno"><a href="1,12" id="srcline12">12</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="1,13" id="srcline13">13</a></span><span class="line"><span class="mxinfo " id="T1:U46"><span class="var type1" id="S2T1U68">y</span> = <span class="var type1" id="S11T1U69">echosample</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="1,14" id="srcline14">14</a></span><span class="line"><span class="keyword">end</span></span></span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,4 @@
+EXPORTS
+trem_scr
+trem_scr_initialize
+trem_scr_terminate

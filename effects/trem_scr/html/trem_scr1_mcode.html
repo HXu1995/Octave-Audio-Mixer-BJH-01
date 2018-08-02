@@ -1,0 +1,23 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<body>
+<script src="resources/eml_report_loadable_data.js"></script>
+<pre class="code">
+<span class="srcline"><span class="lineno"><a href="1,1" id="srcline1"> 1</a></span><span class="line"><span class="keyword">function</span> <span class="var type1" id="S2T1U3">y</span> = trem_scr(<span class="var type1" id="S3T1U6">sample</span>,<span class="var type1" id="S4T2U7">f</span>,<span class="var type1" id="S5T2U8">fs</span>)</span></span>
+<span class="srcline"><span class="lineno"><a href="1,2" id="srcline2"> 2</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="1,3" id="srcline3"> 3</a></span><span class="line"><span class="mxinfo " id="T2:U5"><span class="var type1" id="S6T2U11">f0</span> = <span class="var type1" id="S4T2U12">f</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="1,4" id="srcline4"> 4</a></span><span class="line"><span class="mxinfo " id="T1:U8"><span class="var type1" id="S7T1U15">a</span> = <span class="var type1" id="S3T1U16">sample</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="1,5" id="srcline5"> 5</a></span><span class="line"><span class="mxinfo " id="T2:U11"><span class="var type1" id="S8T2U19">fs0</span> = <span class="var type1" id="S5T2U20">fs</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="1,6" id="srcline6"> 6</a></span><span class="line"><span class="mxinfo " id="T3:U14"><span class="var type1" id="S9T3U23">sz</span> = <span class="mxinfo " id="T3:U16">size(<span class="var type1" id="S7T1U26">a</span>)</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="1,7" id="srcline7"> 7</a></span><span class="line"><span class="mxinfo " id="T4:U18"><span class="var type1" id="S11T4U29">t_sample</span> = <span class="mxinfo " id="T4:U20">zeros(<span class="var type1" id="S9T3U32">sz</span>)</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="1,8" id="srcline8"> 8</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="1,9" id="srcline9"> 9</a></span><span class="line"><span class="keyword">for</span> <span class="var type1" id="S13T5U35">i</span> = <span class="mxinfo " id="T5:U23">1</span>:length(<span class="var type1" id="S3T1U40">sample</span>)</span></span>
+<span class="srcline"><span class="lineno"><a href="1,10" id="srcline10">10</a></span><span class="line">    <span class="mxinfo " id="T2:U25"><span class="var type1" id="S15T2U43">t</span> = <span class="mxinfo " id="T2:U27"><span class="var type1" id="S13T5U45">i</span>/<span class="var type1" id="S5T2U46">fs</span></span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="1,11" id="srcline11">11</a></span><span class="line">    <span class="mxinfo " id="T2:U30"><span class="var type1" id="S16T2U49">lfo</span> = <span class="mxinfo " id="T2:U32">cos(<span class="mxinfo " id="T2:U33"><span class="mxinfo " id="T2:U34">2*pi*<span class="var type1" id="S4T2U58">f</span></span>*<span class="var type1" id="S15T2U59">t</span></span>)</span></span>; <span class="comment">%+ offset);</span></span></span>
+<span class="srcline"><span class="lineno"><a href="1,12" id="srcline12">12</a></span><span class="line">    <span class="mxinfo " id="T5:U37"><span class="mxinfo " id="T5:U38"><span class="var type1" id="S11T4U63">t_sample</span>(<span class="var type1" id="S13T5U64">i</span>)</span> = <span class="mxinfo " id="T2:U41"><span class="var type1" id="S16T2U66">lfo</span>*<span class="mxinfo " id="T2:U43"><span class="var type1" id="S3T1U68">sample</span>(<span class="var type1" id="S13T5U69">i</span>)</span></span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="1,13" id="srcline13">13</a></span><span class="line"><span class="keyword">end</span></span></span>
+<span class="srcline"><span class="lineno"><a href="1,14" id="srcline14">14</a></span><span class="line"><span class="mxinfo " id="T1:U46"><span class="var type1" id="S2T1U72">y</span> = <span class="mxinfo " id="T1:U48">single(<span class="var type1" id="S11T4U75">t_sample</span>)</span></span>;</span></span>
+<span class="srcline"><span class="lineno"><a href="1,15" id="srcline15">15</a></span><span class="line"><span class="keyword">end</span></span></span>
+</pre>
+</body>
+</html>

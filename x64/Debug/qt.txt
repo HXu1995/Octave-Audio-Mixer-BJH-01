@@ -1,0 +1,1 @@
+Uic'ing mainwindow.ui...;D:\QT\5.11.1\MSVC2017_64\bin\uic.exe;"D:\Google Drive UWindsor\Capstone 2018\Octave\Octave With GUI\mainwindow.ui" -o ".\GeneratedFiles\ui_mainwindow.h"
